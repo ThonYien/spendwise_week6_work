@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="app-shell">
+        <aside class="sidebar" aria-label="Main navigation">
+            <a class="brand" href="#dashboard" aria-label="SpendWise home">
+                <span class="brand-mark">S</span>
+                <span>SpendWise</span>
+            </a>
+
+            <p class="nav-heading">MENU</p>
+            <nav class="nav-list">
+                <a class="nav-item active" href="#dashboard"><span class="nav-icon">▦</span>Dashboard</a>
+                <a class="nav-item" href="#categories"><span class="nav-icon">▤</span>Categories</a>
+                <a class="nav-item" href="#transactions"><span class="nav-icon">↕</span>Transactions</a>
+                <a class="nav-item" href="#budget"><span class="nav-icon">◎</span>My Budget</a>
+                <a class="nav-item" href="#reports"><span class="nav-icon">▥</span>Reports</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="help-card">
+                    <span class="help-icon">?</span>
+                    <strong>Need some help?</strong>
+                    <p>Review your spending and stay on track.</p>
+                    <a href="#help">View guide</a>
+                </div>
+                <a class="nav-item" href="#settings"><span class="nav-icon">⚙</span>Settings</a>
+                <div class="profile">
+                    <div class="avatar">TY</div>
+                    <div><strong>Thon Yien</strong><small>Personal account</small></div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="dashboard-area" id="dashboard">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">PERSONAL FINANCE</p>
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="header-actions">
+                    <span class="date-label">November 2026</span>
+                    <button class="notification" type="button" aria-label="Notifications">♧</button>
+                    <div class="header-avatar" aria-label="Thon Yien profile">TY</div>
+                </div>
+            </header>
+
+            <main class="dashboard-content">
+                <section class="welcome-row">
+                    <div>
+                        <h2>Good afternoon, Thon!</h2>
+                        <p>Here is an overview of your money this month.</p>
+                    </div>
+                    <span class="period-pill">Monthly overview&nbsp; ▾</span>
+                </section>
+
+                <section class="summary-grid" aria-label="Monthly financial summary">
+                    <article class="summary-card balance-card" tabindex="0">
+                        <div class="summary-top"><span>Total balance</span><span class="summary-icon">◈</span></div>
+                        <p class="summary-value">KSh 48,500</p>
+                        <p class="summary-note"><span class="positive">↗ 8.2%</span> compared with last month</p>
+                    </article>
+                    <article class="summary-card" tabindex="0">
+                        <div class="summary-top"><span>Monthly income</span><span class="summary-icon income-icon">↙</span></div>
+                        <p class="summary-value">KSh 65,000</p>
+                        <p class="summary-note">Expected income this month</p>
+                    </article>
+                    <article class="summary-card" tabindex="0">
+                        <div class="summary-top"><span>Total expenses</span><span class="summary-icon expense-icon">↗</span></div>
+                        <p class="summary-value">KSh 16,500</p>
+                        <p class="summary-note">25.4% of monthly income</p>
+                    </article>
+                </section>
+
+                <section class="section-block" id="categories">
+                    <div class="section-heading">
+                        <div><h2>Spending by category</h2><p>Your monthly spending at a glance.</p></div>
+                        <a href="#transactions" class="text-link">View details&nbsp; →</a>
+                    </div>
+
+                    <div class="category-grid">
+                        <article class="category-card" tabindex="0">
+                            <div class="category-top"><span class="category-icon food">🍲</span><span class="category-share">22%</span></div>
+                            <h3>Food</h3><p class="category-amount">KSh 3,600</p>
+                            <div class="progress-track"><span style="width:22%"></span></div>
+                            <p class="category-caption">Of monthly expenses</p>
+                        </article>
+                        <article class="category-card" tabindex="0">
+                            <div class="category-top"><span class="category-icon transport">🚌</span><span class="category-share">12%</span></div>
+                            <h3>Transport</h3><p class="category-amount">KSh 2,000</p>
+                            <div class="progress-track"><span style="width:12%"></span></div>
+                            <p class="category-caption">Of monthly expenses</p>
+                        </article>
+                        <article class="category-card" tabindex="0">
+                            <div class="category-top"><span class="category-icon rent">🏠</span><span class="category-share">36%</span></div>
+                            <h3>Rent</h3><p class="category-amount">KSh 6,000</p>
+                            <div class="progress-track"><span style="width:36%"></span></div>
+                            <p class="category-caption">Of monthly expenses</p>
+                        </article>
+                        <article class="category-card" tabindex="0">
+                            <div class="category-top"><span class="category-icon fun">⚽</span><span class="category-share">9%</span></div>
+                            <h3>Entertainment</h3><p class="category-amount">KSh 1,500</p>
+                            <div class="progress-track"><span style="width:9%"></span></div>
+                            <p class="category-caption">Of monthly expenses</p>
+                        </article>
+                        <article class="category-card" tabindex="0">
+                            <div class="category-top"><span class="category-icon savings">🐷</span><span class="category-share">12%</span></div>
+                            <h3>Savings</h3><p class="category-amount">KSh 2,000</p>
+                            <div class="progress-track"><span style="width:12%"></span></div>
+                            <p class="category-caption">Of monthly expenses</p>
+                        </article>
+                        <article class="category-card" tabindex="0">
+                            <div class="category-top"><span class="category-icon utilities">💡</span><span class="category-share">9%</span></div>
+                            <h3>Utilities</h3><p class="category-amount">KSh 1,400</p>
+                            <div class="progress-track"><span style="width:9%"></span></div>
+                            <p class="category-caption">Of monthly expenses</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="lower-grid">
+                    <div class="panel transactions-panel" id="transactions">
+                        <div class="section-heading">
+                            <div><h2>Recent transactions</h2><p>Your latest money activity.</p></div>
+                            <a href="#transactions" class="text-link">See all</a>
+                        </div>
+                        <div class="transaction-list">
+                            <div class="transaction-row"><span class="transaction-symbol food">🍲</span><div class="transaction-name"><strong>Lunch</strong><small>Food · Nov 10, 2026</small></div><strong class="amount">− KSh 450</strong></div>
+                            <div class="transaction-row"><span class="transaction-symbol transport">🚌</span><div class="transaction-name"><strong>Bus fare</strong><small>Transport · Nov 09, 2026</small></div><strong class="amount">− KSh 200</strong></div>
+                            <div class="transaction-row"><span class="transaction-symbol rent">🏠</span><div class="transaction-name"><strong>House rent</strong><small>Rent · Nov 05, 2026</small></div><strong class="amount">− KSh 6,000</strong></div>
+                            <div class="transaction-row"><span class="transaction-symbol income-icon">＋</span><div class="transaction-name"><strong>Monthly income</strong><small>Income · Nov 01, 2026</small></div><strong class="amount credit">+ KSh 65,000</strong></div>
+                        </div>
+                    </div>
+
+                    <aside class="panel budget-panel" id="budget">
+                        <div class="section-heading"><div><h2>Monthly budget</h2><p>Your spending limit.</p></div></div>
+                        <p class="budget-total">KSh 16,500 <span>/ KSh 30,000</span></p>
+                        <div class="budget-track"><span></span></div>
+                        <div class="budget-labels"><span>55% used</span><span>KSh 13,500 left</span></div>
+                        <div class="budget-tip"><span>✦</span><p><strong>Good progress!</strong><br>You are within your monthly budget. Keep it up.</p></div>
+                    </aside>
+                </section>
+                <footer class="page-footer">SpendWise · Simple tools for smarter money decisions.</footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
